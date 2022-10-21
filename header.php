@@ -14,6 +14,9 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
-        Page Header 
-    </header>
+    <?php wp_body_open(); ?>
+    <div id="page" class="site">
+        <header id="masthead" class="site-header" role="banner">
+            <?php get_template_part('partials/header/nav') ?> 
+        </header>
+        <div id="content" class="site-content">
